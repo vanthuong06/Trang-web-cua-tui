@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link rel="stylesheet" href="stylesdangnhap.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Đăng ký</h2>
+      <form id="register-form" onsubmit="handleRegister(event)">
+        <div class="form-group">
+          <label for="new-username">Tài khoản</label>
+          <input type="text" id="new-username" placeholder="Nhập tài khoản" required>
+        </div>
+        <div class="form-group">
+          <label for="new-password">Mật khẩu</label>
+          <input type="password" id="new-password" placeholder="Nhập mật khẩu" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Nhập lại mật khẩu</label>
+          <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Gmail hoặc Số điện thoại</label>
+          <input type="text" id="email" placeholder="Nhập Gmail hoặc Số điện thoại" required>
+        </div>
+        <button type="submit" class="btn-login">Đăng ký</button>
+      </form>
+      <div class="login-footer">
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

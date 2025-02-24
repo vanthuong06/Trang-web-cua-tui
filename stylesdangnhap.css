@@ -1,0 +1,182 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEE2DC;
+    color: #AC3B61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .login-box {
+    width: 400px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    color: #AC3B61;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #AC3B61;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DA7B93;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #AC3B61;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background-color: #DA7B93;
+  }
+  
+  .login-footer {
+    margin-top: 20px;
+  }
+  
+  .login-footer a {
+    color: #AC3B61;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  /* Hiển thị thông báo khi đăng nhập thành công */
+.success-message {
+  display: none; /* Mặc định ẩn */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  background-color: #AC3B61;
+  color: #FFF;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Hiệu ứng xuất hiện */
+.success-message.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hiệu ứng fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+/* Hiển thị thông báo khi đăng ký thành công */
+.register-success-message {
+  display: none; /* Mặc định ẩn */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  background-color: #DA7B93;
+  color: #FFF;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Hiệu ứng xuất hiện */
+.register-success-message.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hiệu ứng fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+/* Định dạng cho thông báo */
+#redirectToHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Màu nền xanh lá */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#redirectToHome.hidden {
+  transform: translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#redirectToHome.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Thêm hiệu ứng */
+#redirectToHome-text {
+  margin: 0;
+  flex: 1;
+}

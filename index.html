@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Bán Quà Lưu Niệm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar"> 
+      <div class="logo"> 
+        <img src="image.png" alt="Logo">
+      </div>
+      <input type="text" class="search-bar" placeholder="Tìm kiếm quà...">
+      <div class="menu">
+        <a href="#">Tặng quà gì?</a>
+        <a href="#">Bạn tặng ai?</a>
+        <a href="#">Nhân ngày gì?</a>
+        <a href="#">Quà mới</a>
+        <a href="#">Gói quà</a>
+      </div>
+      <div class="icons">
+        <button class="cart-icon">🛒</button>
+        <button class="user-icon" onclick="showLogin()">
+          <span class="icon">👤</span> Tài khoản
+        </button>
+        <button class="login-button" onclick="showLogin()">Đăng nhập</button>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+      <div class="banner carousel">
+        <div class="carousel-images">
+          <img src="https://static.kinhtedothi.vn/w960/images/upload/2022/12/21/qua-noel-1.jpg" alt="Banner 1">
+          <img src="https://static.vinwonders.com/production/qua-giang-sinh-1.jpg" alt="Banner 2">
+          <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/qua-giang-sinh-27.jpg" alt="Banner 3">
+          <img src="https://images.careerviet.vn/content/images/hinh-anh-giang-sinh-cute%20(34).jpg" alt="Banner 4">
+          <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2019/12/qua-tang-giang-sinh-2-e1576481071418.jpg" alt="Banner 4">
+          <img src="https://static.kinhtedothi.vn/w960/images/upload/2022/12/21/qua-noel-1.jpg" alt="Banner 1">
+          <img src="https://static.kinhtedothi.vn/w960/images/upload/2022/12/21/qua-noel-1.jpg" alt="Banner 1">
+          <img src="https://static.kinhtedothi.vn/w960/images/upload/2022/12/21/qua-noel-1.jpg" alt="Banner 1">
+        </div>
+      </div>
+
+    <div class="product-section">
+      <h2>Sản phẩm nổi bật</h2>
+
+      <!-- Hàng sản phẩm 1 -->
+      <div class="product-slider" id="slider-1">
+        <div class="product-list">
+          <!-- Các sản phẩm mẫu -->
+          <div id="product-1" class="product-card">
+            <img src="https://mirachan.kitchen/wp-content/uploads/2019/06/maneki-neko-bung-phe.png" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm52525fefvfvfvs</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://f.hoatieu.vn/data/image/2020/11/27/hinh-anh-chuc-giang-sinh-dep-14.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://images.pexels.com/photos/716107/pexels-photo-716107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://cdn.tgdd.vn//News/1392184//a13-730x550.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://dulichvn.org.vn/nhaptin/uploads/images/2020/Thang12/sanphamdulich.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://cdn.tgdd.vn/Files/2021/10/20/1392184/top-qua-luu-niem-y-nghia-cho-nhieu-doi-tuong.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://static.tapchitaichinh.vn/w640/images/upload/01072020/chuot-10_6bc7b53b.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://product.hstatic.net/200000017614/product/tuong-thap-rua_cf9792aa4d0242dfbb6c68e3fb59556c.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://static.vinwonders.com/production/qua-luu-niem-ha-noi.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://artfriendlaser.wordpress.com/wp-content/uploads/2017/03/bang-treo-chia-khoa-tuong.png?w=1200" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          
+          
+          
+                    
+          <!-- Thêm nhiều sản phẩm tùy ý -->
+        </div>
+      </div>
+
+      <!-- Hàng sản phẩm 3 -->
+      <div class="product-section">
+        <h2>Sản phẩm bán chạy</h2>  
+      <div class="product-slider" id="slider-3">
+        <div class="product-list">
+          <!-- Các sản phẩm mẫu -->
+          <div id="product-1" class="product-card">
+            <img src="https://vuanem.com/blog/wp-content/uploads/2022/10/gau-bong.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://statics.vinpearl.com/qua-luu-niem-hue-2_1631329728.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://chus.vn/images/detailed/251/10726_90_F1.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/7/25/1221063/Buudien10.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://cdn.tuoitre.vn/thumb_w/640/2018/2/27/cuckoo-clock-1-day-movement-chalet-style-27cm-by-august-schwer-1411033016403921250253436-30-50201p3050201p-1519667168164591281270.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://trungquocsensetravel.com/view-600/at_top-nhung-mon-qua-doc-dao-khi-di-du-lich-dai-loan--phan-1_dcc9600a1bea9d080344e2636ade15a3.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://cdn.tuoitre.vn/2018/2/27/gu-031074-2-1519667257723360385822.jpg" alt="Sản phẩm 1">
+            <h3 class="product-name">Sản phẩm 1</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="https://www.ozeo.vn/wp-content/uploads/2020/10/bo-giftset-but-go-bg011-va-hop-but-go-hbg1m-khac-ten-theo-yeu-cau-tai-tp-hcm-3.jpg" alt="Sản phẩm 2">
+            <h3 class="product-name">Sản phẩm 2</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="trang minh thien.png" alt="Sản phẩm 1">
+            <h3 class="product-name">Thiện Trang</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <div id="product-2" class="product-card">
+            <img src="hhttps://scontent.fsgn5-7.fna.fbcdn.net/v/t39.30808-1/466786943_1835061493693217_1453364835537935867_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=CNoby_zA19YQ7kNvgE00R7-&_nc_zt=24&_nc_ht=scontent.fsgn5-7.fna&_nc_gid=A7EOtTSFthhyXukX97bXfpv&oh=00_AYByhb_stRTy9yKmXDyHoRC8ee7NrINNI6ZOJswqIDRtEA&oe=6783F4BF" alt="Sản phẩm 2">
+            <h3 class="product-name">Ngo tin</h3>
+            <p class="product-price">300,000 VND</p>
+            <button onclick="buyNow(2)">Mua ngay</button>
+          </div>
+          <div id="product-1" class="product-card">
+            <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/465704616_1549540389259980_4589092571261806094_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=oU5TmuTGdWcQ7kNvgH24d1o&_nc_zt=24&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=ArZRCMtJQ15H8BBeK76mypD&oh=00_AYB3PgV_Fsq-tl9etYI_e25yxCtmKfMAzZyo4bRitQjYSg&oe=6783E6F7" alt="Sản phẩm 1">
+            <h3 class="product-name">Ky dau</h3>
+            <p class="product-price">200,000 VND</p>
+            <button onclick="buyNow(1)">Mua ngay</button>
+          </div>
+          <!-- Thêm nhiều sản phẩm tùy ý -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="notification" class="hidden">
+    <p id="notification-text"></p>
+  </div>  
+  <script src="script.js" defer></script>
+</body>
+</html>

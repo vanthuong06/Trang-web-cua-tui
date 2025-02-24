@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Thanh Toán</title>
+  <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+  <header>
+    <h1>Trang Thanh Toán</h1>
+  </header>
+  <main>
+    <div class="checkout-container">
+      <div class="checkout-details">
+        <!-- Thông tin người nhận -->
+        <div class="customer-info">
+          <h2>Thông tin giao hàng</h2>
+          <label for="address">Địa chỉ giao hàng:</label>
+          <input type="text" id="address" placeholder="Nhập địa chỉ giao hàng" required>
+          <label for="specific-address">Địa chỉ cụ thể:</label>
+          <input type="text" id="specific-address" placeholder="Nhập địa chỉ cụ thể" required>
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+          <h3>Phương thức thanh toán</h3>
+          <div class="payment-method">
+            <label>
+              <input type="radio" name="payment" value="cash" checked>
+              Thanh toán khi nhận hàng
+            </label>
+            <label>
+              <input type="radio" name="payment" value="online">
+              Thanh toán online
+            </label>
+          </div>
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="product-summary">
+          <h2>Thông tin sản phẩm</h2>
+          <div id="product-info"></div>
+          <label for="quantity">Số lượng:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <p id="total-price">Tổng:</p>
+          <button class="add-to-cart-button" onclick="addToCart()">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <button class="checkout-button" onclick="processPayment()">Thanh toán</button>
+    </div>
+  </main>
+  <script src="thanhtoan.js"></script>
+</body>
+</html>
